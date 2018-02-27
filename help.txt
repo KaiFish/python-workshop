@@ -1,0 +1,35 @@
+Board Class:
+  Board()
+    creates a board
+  game.board.printBoard()
+    returns what the current board is
+  game.board.getRow(num)
+    num is 0, 1, or 2
+    returns that row of the Board
+  game.board.getCol(num)
+    num is 0, 1, or 2
+    returns that column of the Board
+  game.board.getDiag(num)
+    num is 1 (top to bottom diagonal) or 2 (bottom to top diagonal)
+    returns that diagonal
+  game.board.switchRow(num, row)
+    num is 0, 1, or 2
+    row is a list of 3 numbers
+    puts that row in the board
+
+Game Class:
+  Game()
+    sets up a game with an empty board to play on
+  game.check3(three)
+    three is an array with 3 elements
+    checks if the elements are equal
+    returns true or false
+  game.checkWin()
+    checks each possible win condition for each player
+    row, column, diagonal for players 1 and 2
+  game.changeBoard(player, move)
+    player is 1 or 2
+    modifies the board with the given move [row, column] for that player
+  game.turn(player)
+    player is 1 or 2
+    completes one turn for given player
